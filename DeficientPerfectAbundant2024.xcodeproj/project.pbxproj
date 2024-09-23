@@ -20,18 +20,44 @@
 
 /* Begin PBXFileReference section */
 		818A14862CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeficientPerfectAbundant2024; sourceTree = BUILT_PRODUCTS_DIR; };
+		818A14992CA1C451008F0F33 /* DeficientPerfectAbundantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeficientPerfectAbundantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		818A14A12CA1C45D008F0F33 /* Exceptions for "DeficientPerfectAbundant2024" folder in "DeficientPerfectAbundantTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 818A14982CA1C451008F0F33 /* DeficientPerfectAbundantTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		818A14882CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				818A14A12CA1C45D008F0F33 /* Exceptions for "DeficientPerfectAbundant2024" folder in "DeficientPerfectAbundantTests" target */,
+			);
 			path = DeficientPerfectAbundant2024;
+			sourceTree = "<group>";
+		};
+		818A149A2CA1C451008F0F33 /* DeficientPerfectAbundantTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DeficientPerfectAbundantTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		818A14832CA1BFBA008F0F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818A14962CA1C451008F0F33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				818A14882CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */,
+				818A149A2CA1C451008F0F33 /* DeficientPerfectAbundantTests */,
 				818A14872CA1BFBA008F0F33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				818A14862CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */,
+				818A14992CA1C451008F0F33 /* DeficientPerfectAbundantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +110,28 @@
 			productReference = 818A14862CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */;
 			productType = "com.apple.product-type.tool";
 		};
+		818A14982CA1C451008F0F33 /* DeficientPerfectAbundantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818A149D2CA1C451008F0F33 /* Build configuration list for PBXNativeTarget "DeficientPerfectAbundantTests" */;
+			buildPhases = (
+				818A14952CA1C451008F0F33 /* Sources */,
+				818A14962CA1C451008F0F33 /* Frameworks */,
+				818A14972CA1C451008F0F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				818A149A2CA1C451008F0F33 /* DeficientPerfectAbundantTests */,
+			);
+			name = DeficientPerfectAbundantTests;
+			packageProductDependencies = (
+			);
+			productName = DeficientPerfectAbundantTests;
+			productReference = 818A14992CA1C451008F0F33 /* DeficientPerfectAbundantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +143,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					818A14852CA1BFBA008F0F33 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					818A14982CA1C451008F0F33 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +165,30 @@
 			projectRoot = "";
 			targets = (
 				818A14852CA1BFBA008F0F33 /* DeficientPerfectAbundant2024 */,
+				818A14982CA1C451008F0F33 /* DeficientPerfectAbundantTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		818A14972CA1C451008F0F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		818A14822CA1BFBA008F0F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818A14952CA1C451008F0F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +338,36 @@
 			};
 			name = Release;
 		};
+		818A149E2CA1C451008F0F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.DeficientPerfectAbundantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		818A149F2CA1C451008F0F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.DeficientPerfectAbundantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +385,15 @@
 			buildConfigurations = (
 				818A148E2CA1BFBA008F0F33 /* Debug */,
 				818A148F2CA1BFBA008F0F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818A149D2CA1C451008F0F33 /* Build configuration list for PBXNativeTarget "DeficientPerfectAbundantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818A149E2CA1C451008F0F33 /* Debug */,
+				818A149F2CA1C451008F0F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
