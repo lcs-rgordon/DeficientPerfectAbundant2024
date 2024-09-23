@@ -54,5 +54,37 @@ struct DeficientPerfectAbundantTests {
         #expect(result == "32500 is an abundant number.")
 
     }
+    
+    // TESTS FOR SUB-FUNCTIONS
+    @Test func specialCaseSumOfProperDivisors() {
+        let result = getSumOfProperDivisors(for: 1)
+        
+        #expect(result == 0)
+    }
+    
+    @Test func manyDivisors() {
+        let result = getSumOfProperDivisors(for: 12)
+        
+        #expect(result == 16)
+    }
+    
+    @Test func categorizeDeficient() {
+        let result = categorize(number: 8)
+        
+        #expect(result == "deficient")
+    }
+    
+    @Test func categorizePerfect() {
+        let result = categorize(number: 28)
+        
+        #expect(result == "perfect")
+    }
+    
+    @Test func categorizeAbundant() {
+        let result = categorize(number: 24)
+        
+        #expect(result == "abundant")
+    }
+    
 
 }
