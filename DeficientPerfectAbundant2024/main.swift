@@ -120,13 +120,22 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
     }
 }
 
-print(getSumOfProperDivisors(for: 4))   // 1 + 2 == 3 (deficient)
-print(categorize(number: 4))            // deficient
-print(report(on: 4))
-print(getSumOfProperDivisors(for: 6))   // 1 + 2 + 3 == 6 (perfect)
-print(categorize(number: 6))            // perfect
-print(report(on: 6))
-print(getSumOfProperDivisors(for: 12))   // 1 + 2 + 3 + 4 + 6 == 16 (abundant)
-print(categorize(number: 12))            // abundant
-print(report(on: 12))
+// PROCESS
+let numberToCheck = getInput(withPrompt: "", minimum: 1, maximum: 32500)
+
+// OUTPUT
+let output = report(on: numberToCheck)
+print(output)
+
+// Temporary test cases
+//
+//print(getSumOfProperDivisors(for: 4))   // 1 + 2 == 3 (deficient)
+//print(categorize(number: 4))            // deficient
+//print(report(on: 4))
+//print(getSumOfProperDivisors(for: 6))   // 1 + 2 + 3 == 6 (perfect)
+//print(categorize(number: 6))            // perfect
+//print(report(on: 6))
+//print(getSumOfProperDivisors(for: 12))   // 1 + 2 + 3 + 4 + 6 == 16 (abundant)
+//print(categorize(number: 12))            // abundant
+//print(report(on: 12))
 
