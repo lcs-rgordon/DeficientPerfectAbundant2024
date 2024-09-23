@@ -54,6 +54,18 @@ func getInput(withPrompt prompt: String, minimum: Int?, maximum: Int?) -> Int {
     
 }
 
+func report(on providedNumber: Int) -> String {
+    
+    let result = categorize(number: providedNumber)
+    
+    if result.starts(with: "a") {
+        return "\(providedNumber) is an abundant number."
+    } else {
+        return "\(providedNumber) is a \(result) number."
+    }
+    
+}
+
 func categorize(number: Int) -> String {
     
     // Get the sum of proper divisors for this number
@@ -110,8 +122,11 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
 
 print(getSumOfProperDivisors(for: 4))   // 1 + 2 == 3 (deficient)
 print(categorize(number: 4))            // deficient
+print(report(on: 4))
 print(getSumOfProperDivisors(for: 6))   // 1 + 2 + 3 == 6 (perfect)
 print(categorize(number: 6))            // perfect
-print(getSumOfProperDivisors(for: 12))  // 1 + 2 + 3 + 4 + 6 == 16 (abundant)
-print(categorize(number: 6))            // abundant
+print(report(on: 6))
+print(getSumOfProperDivisors(for: 12))   // 1 + 2 + 3 + 4 + 6 == 16 (abundant)
+print(categorize(number: 12))            // abundant
+print(report(on: 12))
 
