@@ -54,6 +54,22 @@ func getInput(withPrompt prompt: String, minimum: Int?, maximum: Int?) -> Int {
     
 }
 
+func categorize(number: Int) -> String {
+    
+    // Get the sum of proper divisors for this number
+    let result = getSumOfProperDivisors(for: number)
+    
+    // Categorize the result
+    if result < number {
+        return "deficient"
+    } else if result > number {
+        return "abundant"
+    } else {
+        return "perfect"
+    }
+    
+}
+
 func getSumOfProperDivisors(for number: Int) -> Int {
     
     // Special case
@@ -93,6 +109,9 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
 }
 
 print(getSumOfProperDivisors(for: 4))   // 1 + 2 == 3 (deficient)
+print(categorize(number: 4))            // deficient
 print(getSumOfProperDivisors(for: 6))   // 1 + 2 + 3 == 6 (perfect)
+print(categorize(number: 6))            // perfect
 print(getSumOfProperDivisors(for: 12))  // 1 + 2 + 3 + 4 + 6 == 16 (abundant)
+print(categorize(number: 6))            // abundant
 
