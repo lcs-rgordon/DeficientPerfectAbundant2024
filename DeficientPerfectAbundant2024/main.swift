@@ -86,7 +86,7 @@ func getSumOfProperDivisors(for number: Int) -> Int {
     
     // Special case
     if number == 1 {
-        return 1
+        return 0
     }
     
     // Track sum of divisors

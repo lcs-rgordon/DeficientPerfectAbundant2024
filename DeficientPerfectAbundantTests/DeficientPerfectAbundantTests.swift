@@ -27,6 +27,32 @@ struct DeficientPerfectAbundantTests {
         
         #expect(result == "12 is an abundant number.")
     }
+    
+    @Test func highNumber() {
+        let result = report(on: 30000)
 
+        #expect(result == "30000 is an abundant number.")
+    }
+    
+    @Test func lowNumber() {
+        let result = report(on: 28)
+
+        #expect(result == "28 is a perfect number.")
+    }
+    
+    // BOUNDARY CONDITIONS
+    @Test func lowestPossibleNumber() {
+        let result = report(on: 1)
+        
+        #expect(result == "1 is a deficient number.")
+
+    }
+
+    @Test func highestPossibleNumber() {
+        let result = report(on: 32500)
+        
+        #expect(result == "32500 is an abundant number.")
+
+    }
 
 }
