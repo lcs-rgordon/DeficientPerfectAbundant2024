@@ -120,11 +120,13 @@ func isDivisor(dividend: Int, divisor: Int) -> Bool {
     }
 }
 
-// PROCESS
+// INPUT
 let numberToCheck = getInput(withPrompt: "", minimum: 1, maximum: 32500)
 
-// OUTPUT
+// PROCESS
 let output = report(on: numberToCheck)
+
+// OUTPUT
 print(output)
 
 // Temporary test cases
